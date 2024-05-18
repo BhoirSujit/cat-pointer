@@ -46,9 +46,7 @@ window.onload = function() {
     var img = document.getElementById('catimg');
     var width = img.clientWidth;
     var height = img.clientHeight;
-    let deb = document.getElementById("deb");
-    deb.innerHTML = 'Width: ' + width + ', Height: ' + height;
-  }
+      }
 
 
 contentdiv.addEventListener('touchmove', (e) => {
@@ -100,8 +98,7 @@ function loadcat(x, y) {
 
     let cimg = findClosestImageName(x, y);
     console.log(x + " " + y);
-    let deb = document.getElementById("deb");
-    deb.innerHTML = "toched ar " + x + " " + y;
+  
     console.log(cimg);
     catimg.src = "images/"+cimg;
     
